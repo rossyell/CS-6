@@ -1,0 +1,13 @@
+#createfunction and have it accept string and search letter as arguments
+def count(word, search_let):
+    indx = 0
+    for letter in word:
+        if letter == search_let:
+            indx = indx + 1
+    return indx
+#ask for input
+wurd = input("wot wurd? ")
+search_letter = input("Wot letter to count? ")
+#call function
+let_count = count(wurd, search_letter)
+print(let_count)

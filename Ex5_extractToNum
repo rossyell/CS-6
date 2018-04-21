@@ -1,0 +1,10 @@
+#Useing find and string slicing to extract the portion of the string after the colon character and then useing the float function to convert the extracted string into a floating point number.
+str = 'X-DSPAM-Confidence: 0.84756 '
+beg_pos = str.find(":")
+print("Beginning position is",beg_pos)
+end_pos = str.find(" ", beg_pos+2)
+print("End position is",end_pos)
+num_s = str[beg_pos+2:end_pos]
+print("String is:",num_s)
+num_f = float(num_s)
+print("Floating point number is:",num_f)
